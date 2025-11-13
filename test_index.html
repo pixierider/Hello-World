@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heath Shields for South Dakota Treasurer</title>
+
+  <link rel="canonical" href="https://voteshields.com/" />
+  <meta name="description" content="Heath Shields for South Dakota State Treasurer — fiscal responsibility, transparency, and trusted stewardship for South Dakota." />
+
+  <meta property="og:title" content="Heath Shields for South Dakota Treasurer" />
+  <meta property="og:description" content="Trusted stewardship for South Dakota’s future — fiscal responsibility, transparency, and service." />
+  <meta property="og:url" content="https://voteshields.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://voteshields.com/assets/images/heath_banner_large.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0b4c8c">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+  :root{ --brand-navy:#0b4c8c; --brand-red:#b91c1c; }
+  body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+  .hero-overlay::after{ content:''; position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,.5), rgba(0,0,0,.08)); z-index:1; }
+  .hero-content{ position:relative; z-index:2; }
+  html { scroll-behavior: smooth; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in { animation: fadeIn 1.2s ease-out both; }
+
+  #mobileDonateBtn{
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background: var(--brand-red);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 9999px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    font-weight: 700;
+    font-size: 14px;
+    z-index: 50;
+  }
+  @media(min-width:768px){ #mobileDonateBtn{ display:none; } }
+  </style>
+</head>
+<body class="bg-gray-50 text-slate-900">
+
+  <!-- Header -->
+  <header class="bg-white/95 backdrop-blur shadow-sm sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main">
+      <div class="h-16 flex items-center justify-between">
+        <a href="/" class="font-extrabold tracking-tight text-xl sm:text-2xl text-[var(--brand-navy)]">
+          Heath <span class="text-[var(--brand-red)]">Shields</span>
+          <span class="block text-[10px] sm:text-xs font-semibold text-slate-600">FOR SOUTH DAKOTA TREASURER</span>
+        </a>
+        <button id="menuBtn" class="md:hidden p-2 rounded hover:bg-slate-100" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-6">
+          <a href="#about" class="text-slate-700 hover:text-[var(--brand-navy)] text-sm font-medium">About</a>
+          <a href="#platform" class="text-slate-700 hover:text-[var(--brand-navy)] text-sm font-medium">Platform</a>
+          <a href="#volunteer" class="text-slate-700 hover:text-[var(--brand-navy)] text-sm font-medium">Volunteer</a>
+          <a href="#contact" class="text-slate-700 hover:text-[var(--brand-navy)] text-sm font-medium">Contact</a>
+          <a href="https://secure.winred.com/friends-of-heath-shields/winshields?utm_source=site&utm_medium=nav&utm_campaign=top_cta"
+             class="inline-block bg-[var(--brand-red)] text-white px-4 py-2 rounded-md text-sm font-bold shadow hover:bg-red-800"
+             target="_blank" rel="noopener">DONATE</a>
+        </div>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="mobileMenu" class="md:hidden hidden pb-3">
+        <a href="#about" class="block px-3 py-2 rounded hover:bg-slate-100">About</a>
+        <a href="#platform" class="block px-3 py-2 rounded hover:bg-slate-100">Platform</a>
+        <a href="#volunteer" class="block px-3 py-2 rounded hover:bg-slate-100">Volunteer</a>
+        <a href="#contact" class="block px-3 py-2 rounded hover:bg-slate-100">Contact</a>
+        <a href="https://secure.winred.com/friends-of-heath-shields/winshields?utm_source=site&utm_medium=nav_mobile&utm_campaign=top_cta"
+           class="block px-3 py-2 rounded bg-[var(--brand-red)] text-white mt-1" target="_blank" rel="noopener">DONATE</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="fade-in relative isolate text-white h-[55vh] sm:h-[60vh] md:h-[70vh] flex items-center justify-center text-center">
+    <picture>
+      <source srcset="/assets/images/heath_banner_1200w.png" type="image/png" />
+      <source srcset="/assets/images/heath_banner_728w.webp" type="image/webp" />
+      <img src="/assets/images/heath_banner_728w.webp" alt="Heath Shields, candidate for South Dakota State Treasurer"
+           class="absolute inset-0 w-full h-full object-cover object-center"
+           fetchpriority="high" sizes="100vw" />
+    </picture>
+    <div class="hero-overlay"></div>
+    <div class="hero-content w-full">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div class="max-w-3xl mx-auto">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">Your <span class="text-red-400">Shield</span> for Fiscal Responsibility.</h1>
+          <p class="mt-4 text-lg sm:text-xl md:text-2xl text-slate-100">Conservative leadership. Transparent stewardship. South Dakota values.</p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="https://secure.winred.com/friends-of-heath-shields/winshields?utm_source=site&utm_medium=hero&utm_campaign=primary_cta"
+               class="inline-flex justify-center items-center px-8 py-3 rounded-lg bg-[var(--brand-red)] text-white font-bold shadow hover:bg-red-800 transition"
+               target="_blank" rel="noopener">Donate</a>
+            <a href="#volunteer" class="inline-flex justify-center items-center px-8 py-3 rounded-lg bg-white text-[var(--brand-navy)] font-bold shadow hover:bg-slate-100 transition">Join the Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-slate-900 text-slate-300 text-center text-xs sm:text-sm py-2">Paid for by Friends of Heath Shields Treasurer Committee.</div>
+
+  <!-- About -->
+  <section id="about" class="fade-in py-16 sm:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-[340px_1fr] gap-10 items-start">
+        <picture>
+          <source srcset="/assets/images/heath_headshot.webp" type="image/webp" />
+          <source srcset="/assets/images/heath_headshot.jpeg" type="image/jpeg" />
+          <img src="/assets/images/heath_headshot.jpeg" alt="Heath Shields headshot"
+               class="w-full max-w-[340px] rounded-xl shadow-md md:sticky md:top-24"
+               loading="lazy" decoding="async" width="340" height="430" />
+        </picture>
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[var(--brand-navy)]">Meet Heath Shields</h2>
+          <p class="mt-4 text-lg text-slate-700">Heath Shields is a Republican candidate for South Dakota State Treasurer, bringing a lifetime of South Dakota values and common-sense business experience to the race. Raised with a deep appreciation for hard work and fiscal discipline, Heath understands the importance of managing money responsibly—because that's what South Dakota families do every single day.</p>
+          <p class="mt-4 text-lg text-slate-700">As an entrepreneur and businessman, Heath has owned and operated multi-million-dollar businesses, balanced budgets, made payroll, and navigated complex financial landscapes. He's not a career politician; he's a problem-solver who believes government should be transparent, accountable, and efficient. Heath is running for State Treasurer to be a watchdog for your tax dollars, ensuring every cent is protected and invested wisely. He is committed to <strong>shielding</strong> our state's finances from wasteful spending and bureaucratic overreach.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="inline-flex items-center gap-2 bg-slate-100 text-slate-800 text-sm font-semibold px-3 py-1 rounded">✔ Balanced Budgets</span>
+            <span class="inline-flex items-center gap-2 bg-slate-100 text-slate-800 text-sm font-semibold px-3 py-1 rounded">✔ Small Business Leader</span>
+            <span class="inline-flex items-center gap-2 bg-slate-100 text-slate-800 text-sm font-semibold px-3 py-1 rounded">✔ South Dakota Values</span>
+          </div>
+          <div class="mt-6">
+            <a href="mailto:info@voteshields.com" class="inline-flex items-center gap-2 text-[var(--brand-navy)] font-semibold hover:underline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25H4.5a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5H4.5a2.25 2.25 0 0 0-2.25 2.25"/></svg>
+              info@voteshields.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform -->
+  <section id="platform" class="fade-in py-16 sm:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-[var(--brand-navy)]">Platform: The 7•7•7 Plan</h2>
+        <p class="mt-3 text-lg text-slate-700">Faith-grounded leadership. Conservative stewardship. Real transparency for South Dakota.</p>
+      </div>
+
+      <!-- First 7 -->
+      <div class="mt-12">
+        <h3 class="text-2xl font-extrabold text-[var(--brand-navy)] text-center">Faith Foundation — The First 7</h3>
+        <p class="mt-2 text-center text-slate-700">Heath’s foundation is simple: honor God, serve people, and steward resources with integrity.</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-2">
+          <span class="px-3 py-1 rounded bg-white shadow text-slate-800 text-sm font-semibold">Integrity</span>
+          <span class="px-3 py-1 rounded bg-white shadow text-slate-800 text-sm font-semibold">Stewardship</span>
+          <span class="px-3 py-1 rounded bg-white shadow text-slate-800 text-sm font-semibold">Transparency</span>
+          <span class="px-3 py-1 rounded bg-white shadow text-slate-800 text-sm font-semibold">Accountability</span>
+          <span class="px-3 py-1 rounded bg-white shadow text-slate-800 text-sm font-semibold">Service</span>
+          <span class="px-3 py-1 rounded bg-white shadow text-slate-800 text-sm font-semibold">Courage</span>
+          <span class="px-3 py-1 rounded bg-white shadow text-slate-800 text-sm font-semibold">Faith-led leadership</span>
+        </div>
+      </div>
+
+      <!-- Second 7 -->
+      <div class="mt-16">
+        <h3 class="text-2xl font-extrabold text-[var(--brand-navy)] text-center">Seven Core Priorities</h3>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-xl shadow"><h4 class="text-lg font-bold text-[var(--brand-red)]">Return Unclaimed Property Faster</h4><p class="mt-2 text-slate-700">Streamlined systems so every South Dakotan can easily find and claim what belongs to them.</p></div>
+          <div class="bg-white p-6 rounded-xl shadow"><h4 class="text-lg font-bold text-[var(--brand-red)]">Enhance Financial Transparency</h4><p class="mt-2 text-slate-700">Open, searchable reporting so taxpayers see where every dollar goes.</p></div>
+          <div class="bg-white p-6 rounded-xl shadow"><h4 class="text-lg font-bold text-[var(--brand-red)]">Strengthen Fiscal Security</h4><p class="mt-2 text-slate-700">Disciplined management to protect the state’s financial systems.</p></div>
+          <div class="bg-white p-6 rounded-xl shadow"><h4 class="text-lg font-bold text-[var(--brand-red)]">Modernize Processes & Technology</h4><p class="mt-2 text-slate-700">Upgrade outdated workflows to cut waste and deliver better service.</p></div>
+          <div class="bg-white p-6 rounded-xl shadow"><h4 class="text-lg font-bold text-[var(--brand-red)]">Improve Citizen Communication</h4><p class="mt-2 text-slate-700">Make the office accessible and responsive for families and small businesses.</p></div>
+          <div class="bg-white p-6 rounded-xl shadow"><h4 class="text-lg font-bold text-[var(--brand-red)]">Promote Financial Education</h4><p class="mt-2 text-slate-700">Encourage responsible stewardship at home, in business, and across government.</p></div>
+          <div class="bg-white p-6 rounded-xl shadow md:col-span-2 lg:col-span-3"><h4 class="text-lg font-bold text-[var(--brand-red)]">Protect the Permanent Trust Funds</h4><p class="mt-2 text-slate-700">Safeguard long-term investments so future generations inherit a strong South Dakota.</p></div>
+        </div>
+      </div>
+
+      <!-- Third 7 -->
+      <div class="mt-16">
+        <h3 class="text-2xl font-extrabold text-[var(--brand-navy)] text-center">Seven Commitments to South Dakotans</h3>
+        <ul class="mt-6 max-w-3xl mx-auto space-y-3 text-slate-800">
+          <li>• Every dollar will be handled with integrity.</li>
+          <li>• The office will remain fully accountable to taxpayers.</li>
+          <li>• The public will have clear, timely access to financial information.</li>
+          <li>• Your unclaimed property will be returned
